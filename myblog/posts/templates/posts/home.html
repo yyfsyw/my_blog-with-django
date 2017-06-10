@@ -1,0 +1,15 @@
+<h1> Welcome to My Blog! </h1>
+
+<h2>Lastest Posts</h2>
+
+{% for post in posts.all %}
+
+{{ post.title }}
+<br />
+
+{{ post.pub_date_pretty}}
+
+<br />
+
+{{ post.body }}
+{% endfor %}
