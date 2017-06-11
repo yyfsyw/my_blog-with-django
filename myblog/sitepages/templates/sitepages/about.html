@@ -34,8 +34,7 @@
           <div class="collapse navbar-collapse" id="mynav">
           <ul class="nav navbar-nav">
             <li><a href="{% url 'about' %}">About</a></li>
-            <li><a>Twiiter</a></li>
-            <li><a>Facebook</a></li>
+            <li><a href="http://www.facebook.com">Facebook</a></li>
             <li><a>Resume</a></li>
           </ul>
         </div>
@@ -44,17 +43,12 @@
 
     <div class="container">
 
-      <a href="{% url 'post_detail' post.id %}"><h1>{{ post.title }}</h1></a>
+      <h1> About </h1>
 
-      <h4> <span class="glyphicon glyphicon-time" aria-hidden="true"></span> {{ post.pub_date_pretty}}</h4>
+      <h2>Who am I ?</h2>
+      <p>Yunfei is a freelancer</p>
 
-      <br />
-      <img src="{{ post.image.url }}" class="img-responsive center-block"  style="max-height:450px;"/>
 
-      <br />
-      <p>{{ post.body}}</p>
-      <br />
-      <br />
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
